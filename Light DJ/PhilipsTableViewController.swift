@@ -10,14 +10,13 @@ import UIKit
 
 class PhilipsTableViewController: UITableViewController {
     
-    var arr = ["1","3","4"]
+    var arr : [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     
 
-        //setNavigationBar()
+        
+        self.tableView.backgroundColor = UIColor.black
         
 
 
