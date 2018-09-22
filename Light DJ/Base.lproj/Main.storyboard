@@ -72,6 +72,7 @@
                                 <state key="normal" image="philip"/>
                                 <connections>
                                     <action selector="philipsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zg-2f-SSZ"/>
+                                    <segue destination="UDx-9S-9e9" kind="show" id="8UC-fR-vcx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9R-Jv-yok">
@@ -169,6 +170,39 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
+        <!--Lights Groups-->
+        <scene sceneID="7pr-9e-YpV">
+            <objects>
+                <tableViewController id="aOj-VV-t0C" customClass="PhilipsTableViewController" customModule="Light_DJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mVy-yU-Tcl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="rdz-Mp-HcQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdz-Mp-HcQ" id="Dgn-JY-2U1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aOj-VV-t0C" id="xXF-aO-SZV"/>
+                            <outlet property="delegate" destination="aOj-VV-t0C" id="keB-qJ-d9U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lights Groups" id="8q8-UY-Udz">
+                        <barButtonItem key="rightBarButtonItem" title="done" id="sPf-Vi-Edc">
+                            <color key="tintColor" red="0.9241669774055481" green="0.93724602460861206" blue="0.046716563403606415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UL3-Gl-UqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911.2" y="132.26600985221674"/>
+        </scene>
         <!--Help View Controller-->
         <scene sceneID="Sdx-oH-CQz">
             <objects>
@@ -207,6 +241,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdc-3C-3XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-735.20000000000005" y="132.26600985221674"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="07x-ot-LIN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UDx-9S-9e9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="erS-kc-5bw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aOj-VV-t0C" kind="relationship" relationship="rootViewController" id="NIM-ey-m0e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1It-Ut-A9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="132.26600985221674"/>
         </scene>
     </scenes>
     <resources>
