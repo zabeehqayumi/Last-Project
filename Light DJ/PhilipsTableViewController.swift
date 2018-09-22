@@ -36,13 +36,13 @@ class PhilipsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arr.count
+        return 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = arr[indexPath.row]
+       // cell.textLabel?.text = arr[indexPath.row]
         
         return cell
     }
@@ -55,9 +55,9 @@ class PhilipsTableViewController: UITableViewController {
     
     //Footer title
     
-    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return FooterTitle[section]
-    }
+//    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+//        return FooterTitle[section]
+//    }
     
     // Header design
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -71,17 +71,17 @@ class PhilipsTableViewController: UITableViewController {
         
     }
     // Footer design
-    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-        
-        // Custom design
-        
-        let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.textColor = UIColor.gray
-        header.backgroundView?.backgroundColor = UIColor.black
-        header.textLabel?.font = UIFont(name: "Futura", size: 15)!
-        
-        
-    }
+//    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+//
+//        // Custom design
+//
+//        let header = view as! UITableViewHeaderFooterView
+//        header.textLabel?.textColor = UIColor.gray
+//        header.backgroundView?.backgroundColor = UIColor.black
+//        header.textLabel?.font = UIFont(name: "Futura", size: 15)!
+//
+//
+//    }
     
     // Done button
     @IBAction func doneButtonPressed(_ sender: Any) {
