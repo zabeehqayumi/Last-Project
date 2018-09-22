@@ -28,11 +28,14 @@ class PhilipsTableViewController: UITableViewController {
    
 
     // MARK: - Table view data source
+    
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 3
+//    }
 
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return arr.count
     }
 
@@ -43,17 +46,23 @@ class PhilipsTableViewController: UITableViewController {
         
         return cell
     }
+    
     //Header title
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return headerTitle[section]
     }
+    
     //Footer title
+    
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         return FooterTitle[section]
     }
     
-    // Header
+    // Header design
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+        // Custom design
         
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.white
@@ -61,6 +70,19 @@ class PhilipsTableViewController: UITableViewController {
         header.textLabel?.font = UIFont(name: "Futura", size: 22)!
         
     }
+    // Footer design
+    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        
+        // Custom design
+        
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.gray
+        header.backgroundView?.backgroundColor = UIColor.black
+        header.textLabel?.font = UIFont(name: "Futura", size: 15)!
+        
+        
+    }
+    
     // Done button
     @IBAction func doneButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
