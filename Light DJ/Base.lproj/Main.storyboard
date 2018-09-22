@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
-        <!--Lights Groups-->
+        <!--Light Groups-->
         <scene sceneID="7pr-9e-YpV">
             <objects>
                 <tableViewController id="aOj-VV-t0C" customClass="PhilipsTableViewController" customModule="Light_DJ" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +193,7 @@
                             <outlet property="delegate" destination="aOj-VV-t0C" id="keB-qJ-d9U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Lights Groups" id="8q8-UY-Udz">
+                    <navigationItem key="navigationItem" title="Light Groups" id="8q8-UY-Udz">
                         <barButtonItem key="rightBarButtonItem" title="done" id="sPf-Vi-Edc">
                             <color key="tintColor" red="0.9241669774055481" green="0.93724602460861206" blue="0.046716563403606415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -204,7 +204,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UL3-Gl-UqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911.2" y="132.26600985221674"/>
+            <point key="canvasLocation" x="1564" y="133"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="Sdx-oH-CQz">
@@ -243,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdc-3C-3XJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735.20000000000005" y="132.26600985221674"/>
+            <point key="canvasLocation" x="137" y="832"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="07x-ot-LIN">
@@ -255,7 +255,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.9241669774055481" green="0.93724602460861206" blue="0.046716563403606415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -268,7 +268,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1It-Ut-A9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="132.26600985221674"/>
+            <point key="canvasLocation" x="862" y="133"/>
         </scene>
     </scenes>
     <resources>

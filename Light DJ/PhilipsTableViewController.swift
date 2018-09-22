@@ -11,14 +11,16 @@ import UIKit
 class PhilipsTableViewController: UITableViewController {
     
     var arr : [String] = []
+    var headerTitle: [String] = ["Select your light group:"]
+    var FooterTitle: [String] = ["Lights Not Connected"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         self.tableView.backgroundColor = UIColor.black
         
-
+        
 
     }
     
@@ -41,7 +43,25 @@ class PhilipsTableViewController: UITableViewController {
         
         return cell
     }
-
+    //Header title
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return headerTitle[section]
+    }
+    //Footer title
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return FooterTitle[section]
+    }
+    
+    // Header
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.white
+        header.backgroundView?.backgroundColor = UIColor.black
+        header.textLabel?.font = UIFont(name: "Futura", size: 22)!
+        
+    }
+    // Done button
     @IBAction func doneButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
