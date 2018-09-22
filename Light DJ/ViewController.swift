@@ -15,6 +15,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func equalizerButtonPressed(_ sender: Any) {
+    }
+    @IBAction func exclamationButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func collectorButtonPressed(_ sender: Any) {
+        
+    }
+    @IBAction func philipsButtonPressed(_ sender: Any) {
+    }
+    @IBAction func settingButtonPressed(_ sender: Any) {
+    }
+    @IBAction func lockColorButtonPressed(_ sender: Any) {
+    }
+    @IBAction func twiestedRainbowButtonPressed(_ sender: Any) {
+    }
+    @IBAction func otherButtonPressed(_ sender: Any) {
+    }
+    @IBAction func controlsButtonPressed(_ sender: Any) {
+    }
 }
 
