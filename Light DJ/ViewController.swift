@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     // Hidden buttons collection for drop down menu
     
+    @IBOutlet var topThreeButtons: [UIButton]!
+    
+    
     @IBOutlet var buttonsCollection: [UIButton]!
     
     // ColorPallete changer
@@ -23,6 +26,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func equalizerButtonPressed(_ sender: Any) {
+        
+        topThreeButtons.forEach { (Button) in
+            UIView.animate(withDuration: 0.5, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+        
     }
     @IBAction func exclamationButtonPressed(_ sender: Any) {
     }
@@ -43,12 +54,15 @@ class ViewController: UIViewController {
     }
     @IBAction func lockColorButtonPressed(_ sender: Any) {
     }
+    
+    
+    
+    
     @IBAction func twiestedRainbowButtonPressed(_ sender: Any) {
         // Calling
         
         dropDown()
 
-        
     }
     @IBAction func otherButtonPressed(_ sender: Any) {
     }
