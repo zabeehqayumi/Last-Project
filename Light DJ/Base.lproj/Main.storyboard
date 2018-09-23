@@ -122,74 +122,104 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rS9-XF-xho">
-                                <rect key="frame" x="127" y="156" width="232" height="300"/>
+                                <rect key="frame" x="127" y="156" width="232" height="0.0"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYp-gq-1VC">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYp-gq-1VC">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sxf-Mq-jpu"/>
+                                        </constraints>
                                         <state key="normal" title="Twisted Rainbow">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-Mo-xpW">
-                                        <rect key="frame" x="0.0" y="30" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-Mo-xpW">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OMD-xv-mmb"/>
+                                        </constraints>
                                         <state key="normal" title="Hawaiian Sunrise">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-rb-iJX">
-                                        <rect key="frame" x="0.0" y="60" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-rb-iJX">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="P6s-bZ-Hv4"/>
+                                        </constraints>
                                         <state key="normal" title="Green Dragon">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-4p-Yni">
-                                        <rect key="frame" x="0.0" y="90" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-4p-Yni">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dAl-tT-BSE"/>
+                                        </constraints>
                                         <state key="normal" title="Rocket Pop">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-ql-Gnw">
-                                        <rect key="frame" x="0.0" y="120" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-ql-Gnw">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qdK-lj-gdY"/>
+                                        </constraints>
                                         <state key="normal" title="Blue Dream">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-CF-fFg">
-                                        <rect key="frame" x="0.0" y="150" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-CF-fFg">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lBh-Jo-Wkp"/>
+                                        </constraints>
                                         <state key="normal" title="Strawberry Daquiri">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-Ie-Npr">
-                                        <rect key="frame" x="0.0" y="180" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-Ie-Npr">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YIf-XA-NRo"/>
+                                        </constraints>
                                         <state key="normal" title="Screwdriver">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-q4-m1j">
-                                        <rect key="frame" x="0.0" y="210" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-q4-m1j">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ozP-5I-fkn"/>
+                                        </constraints>
                                         <state key="normal" title="Good Vibes">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-Em-czi">
-                                        <rect key="frame" x="0.0" y="240" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-Em-czi">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TvX-bd-CWS"/>
+                                        </constraints>
                                         <state key="normal" title="Fire and Ice">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Oi-2ju">
-                                        <rect key="frame" x="0.0" y="270" width="232" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Oi-2ju">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kxf-fd-wpq"/>
+                                        </constraints>
                                         <state key="normal" title="Electric Summer">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -246,6 +276,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="buttonsCollection" destination="lYp-gq-1VC" collectionClass="NSMutableArray" id="14a-0v-gLv"/>
+                        <outletCollection property="buttonsCollection" destination="VFg-Mo-xpW" collectionClass="NSMutableArray" id="nO5-so-4wH"/>
+                        <outletCollection property="buttonsCollection" destination="gPV-rb-iJX" collectionClass="NSMutableArray" id="221-CK-iLf"/>
+                        <outletCollection property="buttonsCollection" destination="McQ-4p-Yni" collectionClass="NSMutableArray" id="RZy-TG-tDW"/>
+                        <outletCollection property="buttonsCollection" destination="M9e-ql-Gnw" collectionClass="NSMutableArray" id="ZJA-kr-yeq"/>
+                        <outletCollection property="buttonsCollection" destination="hOR-CF-fFg" collectionClass="NSMutableArray" id="7X2-FA-71k"/>
+                        <outletCollection property="buttonsCollection" destination="Rgi-Ie-Npr" collectionClass="NSMutableArray" id="2pd-qe-4zR"/>
+                        <outletCollection property="buttonsCollection" destination="dvC-q4-m1j" collectionClass="NSMutableArray" id="5Eg-Nb-0aw"/>
+                        <outletCollection property="buttonsCollection" destination="AA3-Em-czi" collectionClass="NSMutableArray" id="Flt-Ok-wFn"/>
+                        <outletCollection property="buttonsCollection" destination="fA0-Oi-2ju" collectionClass="NSMutableArray" id="Qhi-XG-mXk"/>
+                        <outletCollection property="buttonsCollection" destination="McQ-4p-Yni" collectionClass="NSMutableArray" id="IS4-74-FIV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

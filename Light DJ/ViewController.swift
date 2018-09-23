@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var buttonsCollection: [UIButton]!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +39,15 @@ class ViewController: UIViewController {
     @IBAction func lockColorButtonPressed(_ sender: Any) {
     }
     @IBAction func twiestedRainbowButtonPressed(_ sender: Any) {
+        
+        buttonsCollection.forEach { (Button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+
+        
     }
     @IBAction func otherButtonPressed(_ sender: Any) {
     }
