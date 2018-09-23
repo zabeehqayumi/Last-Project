@@ -9,6 +9,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Visualizer View Controller-->
+        <scene sceneID="lJy-i9-sU5">
+            <objects>
+                <viewController id="KCd-J2-cXM" customClass="VisualizerViewController" customModule="Light_DJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMo-7J-CKv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6HJ-dv-pS2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGp-yJ-cDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="-1201"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -269,6 +284,10 @@
                                             <constraint firstAttribute="height" constant="134" id="YDP-wk-IoI"/>
                                         </constraints>
                                         <state key="normal" image="visuallizer"/>
+                                        <connections>
+                                            <action selector="visualizerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jmj-rn-v3n"/>
+                                            <segue destination="KCd-J2-cXM" kind="show" id="w0s-54-wwz"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5X-30-lhD">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="134"/>
@@ -277,6 +296,9 @@
                                             <constraint firstAttribute="height" constant="134" id="bmR-W8-9xJ"/>
                                         </constraints>
                                         <state key="normal" image="scenceMaker"/>
+                                        <connections>
+                                            <action selector="scenemakerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0XX-vx-ckT"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crE-C4-LmS">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="134"/>
@@ -285,6 +307,9 @@
                                             <constraint firstAttribute="width" constant="270" id="yEt-we-g6I"/>
                                         </constraints>
                                         <state key="normal" image="matrix"/>
+                                        <connections>
+                                            <action selector="matrixTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qeq-Je-x8V"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -358,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-428" y="-293.3497536945813"/>
+            <point key="canvasLocation" x="-458" y="-311"/>
         </scene>
         <!--Settings-->
         <scene sceneID="M9e-Sr-Bzl">

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // Hidden buttons collection for drop down menu
+    // Hidden buttons collection for drop down menu and three top button for visualizer
     
     @IBOutlet var topThreeButtons: [UIButton]!
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func equalizerButtonPressed(_ sender: Any) {
         
         topThreeButtons.forEach { (Button) in
-            UIView.animate(withDuration: 0.5, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                 Button.isHidden = !Button.isHidden
                 self.view.layoutIfNeeded()
             })
@@ -137,6 +137,22 @@ class ViewController: UIViewController {
             })
         }
     }
+    
+    
+    
+    // top three buttons of visualizer
+    
+    @IBAction func visualizerTapped(_ sender: Any) {
+    }
+    
+    @IBAction func scenemakerTapped(_ sender: Any) {
+    }
+    
+    @IBAction func matrixTapped(_ sender: Any) {
+    }
+    
+    
+    
     
 }
 
