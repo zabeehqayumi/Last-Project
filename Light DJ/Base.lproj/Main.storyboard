@@ -133,6 +133,9 @@
                                         <state key="normal" title="Twisted Rainbow">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="twistedRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQG-aw-7dC"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-Mo-xpW">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -143,6 +146,9 @@
                                         <state key="normal" title="Hawaiian Sunrise">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="hawaiianSunrise:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks9-oH-Lxl"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-rb-iJX">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -153,6 +159,9 @@
                                         <state key="normal" title="Green Dragon">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="greenDragon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqW-Cb-wvM"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-4p-Yni">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -163,6 +172,9 @@
                                         <state key="normal" title="Rocket Pop">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rocketPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ep1-Bv-sPC"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-ql-Gnw">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -173,6 +185,9 @@
                                         <state key="normal" title="Blue Dream">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="blueDream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIa-9Z-Zu7"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOR-CF-fFg">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -183,6 +198,9 @@
                                         <state key="normal" title="Strawberry Daquiri">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="strawberryDaquiri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi6-Zo-72n"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgi-Ie-Npr">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -193,6 +211,9 @@
                                         <state key="normal" title="Screwdriver">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="srewdriver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ce0-At-viG"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-q4-m1j">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -203,6 +224,9 @@
                                         <state key="normal" title="Good Vibes">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goodVibes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5f4-K0-Qex"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-Em-czi">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -213,6 +237,9 @@
                                         <state key="normal" title="Fire and Ice">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fireAndRice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeL-Js-ntz"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Oi-2ju">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="40"/>
@@ -223,6 +250,9 @@
                                         <state key="normal" title="Electric Summer">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="electricSummer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PW9-fg-D5n"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -277,6 +307,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="colorPallete" destination="v6U-kE-t65" id="gNh-j5-o4n"/>
                         <outletCollection property="buttonsCollection" destination="lYp-gq-1VC" collectionClass="NSMutableArray" id="14a-0v-gLv"/>
                         <outletCollection property="buttonsCollection" destination="VFg-Mo-xpW" collectionClass="NSMutableArray" id="nO5-so-4wH"/>
                         <outletCollection property="buttonsCollection" destination="gPV-rb-iJX" collectionClass="NSMutableArray" id="221-CK-iLf"/>
