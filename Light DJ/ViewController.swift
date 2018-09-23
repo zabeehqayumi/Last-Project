@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // Hidden buttons collection for drop down menu
+    
     @IBOutlet var buttonsCollection: [UIButton]!
     
     // ColorPallete changer
@@ -43,13 +44,9 @@ class ViewController: UIViewController {
     @IBAction func lockColorButtonPressed(_ sender: Any) {
     }
     @IBAction func twiestedRainbowButtonPressed(_ sender: Any) {
+        // Calling
         
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+        dropDown()
 
         
     }
@@ -63,112 +60,68 @@ class ViewController: UIViewController {
     // 1
     @IBAction func twistedRainbow(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "twistedrainbow-1")
-        
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 2
     @IBAction func hawaiianSunrise(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "hawaiiansunrise")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 3
     @IBAction func greenDragon(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "greendragon")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
+
     }
     // 4
     @IBAction func rocketPop(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "rocketpop")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 5
     @IBAction func blueDream(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "bluedream")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 6
     @IBAction func strawberryDaquiri(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "strawberrydaquiri")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
-
+         dropDown()
     }
     // 7
     @IBAction func srewdriver(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "screwdriver")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 8
     @IBAction func goodVibes(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "goodvibes")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
+         dropDown()
 
     }
     // 9
     @IBAction func fireAndRice(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "fireandice")
-        buttonsCollection.forEach { (Button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                Button.isHidden = !Button.isHidden
-                self.view.layoutIfNeeded()
-            })
-        }
-
+        dropDown()
     }
     // 10
     @IBAction func electricSummer(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "electricsummer")
+        dropDown()
+    }
+    
+    func dropDown(){
         buttonsCollection.forEach { (Button) in
             UIView.animate(withDuration: 0.3, animations: {
                 Button.isHidden = !Button.isHidden
                 self.view.layoutIfNeeded()
             })
         }
-
     }
     
 }
