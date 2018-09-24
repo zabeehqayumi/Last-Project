@@ -9,6 +9,9 @@
 import UIKit
 
 class VisualizerViewController: UIViewController {
+    
+    @IBOutlet var topThreeButtons: [UIButton]!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +20,21 @@ class VisualizerViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func helpButtonPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
+            
+        }
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+
+    
+}
+    
+    @IBAction func visualizerButtonPressed(_ sender: Any) {
     }
-    */
-
+    
 }

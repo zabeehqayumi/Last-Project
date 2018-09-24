@@ -53,6 +53,14 @@ class ViewController: UIViewController {
     @IBAction func settingButtonPressed(_ sender: Any) {
     }
     @IBAction func lockColorButtonPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
+            
+        }
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     
