@@ -84,9 +84,8 @@
                                     <segue destination="6uq-R6-yGV" kind="show" id="lu9-lz-ij4"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a5N-FC-3aL">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a5N-FC-3aL">
                                 <rect key="frame" x="1" y="88" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGF-66-iRD">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="139"/>
@@ -120,6 +119,7 @@
                             <constraint firstItem="vyI-Y0-xKx" firstAttribute="leading" secondItem="XZ1-5D-lwP" secondAttribute="trailing" constant="-50" id="3e9-hJ-g1z"/>
                             <constraint firstItem="Gvs-RE-jlr" firstAttribute="leading" secondItem="bI9-po-l4Z" secondAttribute="trailing" constant="8" symbolic="YES" id="ASU-bv-PKO"/>
                             <constraint firstItem="6HJ-dv-pS2" firstAttribute="bottom" secondItem="XZ1-5D-lwP" secondAttribute="bottom" constant="-34" id="BfA-QK-YG8"/>
+                            <constraint firstItem="a5N-FC-3aL" firstAttribute="top" secondItem="6HJ-dv-pS2" secondAttribute="top" constant="44" id="Bvd-gA-Nky"/>
                             <constraint firstItem="bI9-po-l4Z" firstAttribute="leading" secondItem="KHO-n6-G8b" secondAttribute="trailing" constant="8" symbolic="YES" id="C35-mO-bdo"/>
                             <constraint firstItem="Gvs-RE-jlr" firstAttribute="top" secondItem="KHO-n6-G8b" secondAttribute="top" id="IfY-AN-Rfd"/>
                             <constraint firstItem="6HJ-dv-pS2" firstAttribute="trailing" secondItem="XZ1-5D-lwP" secondAttribute="trailing" id="K1b-83-mib"/>
@@ -133,6 +133,7 @@
                             <constraint firstItem="XZ1-5D-lwP" firstAttribute="top" secondItem="6HJ-dv-pS2" secondAttribute="top" constant="-44" id="pGV-bl-NXS"/>
                             <constraint firstItem="Gvs-RE-jlr" firstAttribute="leading" secondItem="fMo-7J-CKv" secondAttribute="leading" constant="119" id="ppI-B4-MFs"/>
                             <constraint firstItem="XZ1-5D-lwP" firstAttribute="leading" secondItem="KHO-n6-G8b" secondAttribute="trailing" constant="-59" id="qjK-UY-2St"/>
+                            <constraint firstItem="a5N-FC-3aL" firstAttribute="leading" secondItem="6HJ-dv-pS2" secondAttribute="leading" constant="1" id="sPC-2Z-khL"/>
                             <constraint firstItem="XZ1-5D-lwP" firstAttribute="leading" secondItem="6HJ-dv-pS2" secondAttribute="leading" id="usL-hs-Aaf"/>
                             <constraint firstItem="Gvs-RE-jlr" firstAttribute="top" secondItem="06x-fm-BQ6" secondAttribute="top" id="xsg-w8-xw7"/>
                         </constraints>
@@ -147,6 +148,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGp-yJ-cDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1108" y="-1404.6798029556651"/>
+        </scene>
+        <!--Scene Maker View Controller-->
+        <scene sceneID="Cb5-P0-UtG">
+            <objects>
+                <viewController id="WHv-Yn-g1B" customClass="SceneMakerViewController" customModule="Light_DJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PDM-17-afn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dTw-0S-CX4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9w-XS-GPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-1405"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -422,6 +438,7 @@
                                         <state key="normal" image="scenceMaker"/>
                                         <connections>
                                             <action selector="scenemakerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0XX-vx-ckT"/>
+                                            <segue destination="WHv-Yn-g1B" kind="show" id="CTz-He-Jjp"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crE-C4-LmS">
@@ -702,8 +719,8 @@
         <image name="xxx" width="80" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lu9-lz-ij4"/>
-        <segue reference="tdG-F0-fJV"/>
-        <segue reference="OUr-fB-SjG"/>
+        <segue reference="jGA-lf-s3n"/>
+        <segue reference="8UC-fR-vcx"/>
+        <segue reference="XAp-cX-avy"/>
     </inferredMetricsTieBreakers>
 </document>

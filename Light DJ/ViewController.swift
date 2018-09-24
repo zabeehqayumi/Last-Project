@@ -156,7 +156,15 @@ class ViewController: UIViewController {
     @IBAction func scenemakerTapped(_ sender: Any) {
     }
     
+    // minimizing the topThreeButtons when has its own class
     @IBAction func matrixTapped(_ sender: Any) {
+        topThreeButtons.forEach { (Button) in
+            UIView.animate(withDuration: 0.2, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    
     }
     
     

@@ -35,6 +35,18 @@ class VisualizerViewController: UIViewController {
 }
     
     @IBAction func visualizerButtonPressed(_ sender: Any) {
+        dropDown()
+        
     }
+    
+    func dropDown(){
+        topThreeButtons.forEach { (Button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+
     
 }
