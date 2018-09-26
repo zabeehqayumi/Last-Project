@@ -12,6 +12,14 @@ class VisualizerViewController: UIViewController {
     
     @IBOutlet var topThreeButtons: [UIButton]!
     
+    @IBOutlet var mellowEffects: [UIButton]!
+    
+    
+    @IBOutlet var activeEffects: [UIButton]!
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +65,31 @@ class VisualizerViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
         }
+        
+    }
+    
+    @IBAction func volumTriggered(_ sender: Any) {
+    }
+    
+    @IBAction func noneButtonPressed(_ sender: Any) {
+        mellowEffects.forEach { (Button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+        
+    }
+    
+    @IBAction func firworksButtonPressed(_ sender: Any) {
+        activeEffects.forEach { (Button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+
+        
         
     }
     
