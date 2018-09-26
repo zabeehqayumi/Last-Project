@@ -27,9 +27,8 @@ class VisualizerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-
-    @IBAction func helpButtonPressed(_ sender: Any) {
+    
+    func warning(){
         
         let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
         let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
@@ -38,11 +37,20 @@ class VisualizerViewController: UIViewController {
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
 
+
+    @IBAction func helpButtonPressed(_ sender: Any) {
+        // calling
+        
+        warning()
     
 }
     
     @IBAction func visualizerButtonPressed(_ sender: Any) {
+        // calling
+        
         dropDown()
         
     }
@@ -69,6 +77,7 @@ class VisualizerViewController: UIViewController {
     }
     
     @IBAction func volumTriggered(_ sender: Any) {
+        warning()
     }
     
     @IBAction func noneButtonPressed(_ sender: Any) {
