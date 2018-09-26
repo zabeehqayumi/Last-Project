@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		007BF90FC109DB239A12F095 /* Pods_Light_DJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4F49F50517098EC770516 /* Pods_Light_DJ.framework */; };
 		4E0ECDF3215C04A7007276E4 /* VisualizerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */; };
+		4E0ECDF5215C285C007276E4 /* SceneMakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */; };
 		4E1149CA2155F3C10018F3C6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149C92155F3C10018F3C6 /* HelpViewController.swift */; };
 		4E1149CC2155F84B0018F3C6 /* PhilipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */; };
 		4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		434CE9E1F57C138947FCD097 /* Pods-Light DJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light DJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Light DJ/Pods-Light DJ.release.xcconfig"; sourceTree = "<group>"; };
 		4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizerSettingViewController.swift; sourceTree = "<group>"; };
+		4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneMakerTableViewCell.swift; sourceTree = "<group>"; };
 		4E1149C92155F3C10018F3C6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilipsTableViewController.swift; sourceTree = "<group>"; };
 		4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				4E1149D121574C730018F3C6 /* VisualizerViewController.swift */,
 				4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */,
 				4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */,
+				4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */,
 				4EDCF9062155D20200056AAD /* Main.storyboard */,
 				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
 				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0ECDF3215C04A7007276E4 /* VisualizerSettingViewController.swift in Sources */,
+				4E0ECDF5215C285C007276E4 /* SceneMakerTableViewCell.swift in Sources */,
 				4EDCF9052155D20200056AAD /* ViewController.swift in Sources */,
 				4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */,
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,

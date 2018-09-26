@@ -10,12 +10,14 @@ import UIKit
 
 class SceneMakerViewController: UIViewController {
     
+    var arrOfCells : [UIImage] = []
     
     @IBOutlet var topThreeButtons: [UIButton]!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -50,6 +52,27 @@ class SceneMakerViewController: UIViewController {
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    
+}
+
+// Extension of class
+
+extension SceneMakerViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return arrOfCells.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SceneMakerTableViewCell
+        
+        cell.detailCells.image = arrOfCells[indexPath.row]
+        return cell
+        
     }
     
     

@@ -51,8 +51,6 @@ class VisualizerSettingViewController: UIViewController {
             })
         }
     }
-    
-    
     @IBAction func visualizerSettingPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
