@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007BF90FC109DB239A12F095 /* Pods_Light_DJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F4F49F50517098EC770516 /* Pods_Light_DJ.framework */; };
+		4E0ECDF3215C04A7007276E4 /* VisualizerSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */; };
 		4E1149CA2155F3C10018F3C6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149C92155F3C10018F3C6 /* HelpViewController.swift */; };
 		4E1149CC2155F84B0018F3C6 /* PhilipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */; };
 		4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434CE9E1F57C138947FCD097 /* Pods-Light DJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light DJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-Light DJ/Pods-Light DJ.release.xcconfig"; sourceTree = "<group>"; };
+		4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizerSettingViewController.swift; sourceTree = "<group>"; };
 		4E1149C92155F3C10018F3C6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilipsTableViewController.swift; sourceTree = "<group>"; };
 		4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		4EDCF90C2155D20400056AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDCF90F2155D20400056AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDCF9112155D20400056AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F4F49F50517098EC770516 /* Pods_Light_DJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Light_DJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB133D81FD0D06B9BB67EDFB /* Pods-Light DJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light DJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Light DJ/Pods-Light DJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007BF90FC109DB239A12F095 /* Pods_Light_DJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273200CFCACAF1F6F39C9047 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB133D81FD0D06B9BB67EDFB /* Pods-Light DJ.debug.xcconfig */,
+				434CE9E1F57C138947FCD097 /* Pods-Light DJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A31CD19064351FDBB18C298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F4F49F50517098EC770516 /* Pods_Light_DJ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4EDCF8F62155D20200056AAD = {
 			isa = PBXGroup;
 			children = (
 				4EDCF9012155D20200056AAD /* Light DJ */,
 				4EDCF9002155D20200056AAD /* Products */,
+				273200CFCACAF1F6F39C9047 /* Pods */,
+				4A31CD19064351FDBB18C298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 				4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */,
 				4E1149D121574C730018F3C6 /* VisualizerViewController.swift */,
 				4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */,
+				4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */,
 				4EDCF9062155D20200056AAD /* Main.storyboard */,
 				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
 				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
@@ -89,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EDCF9142155D20400056AAD /* Build configuration list for PBXNativeTarget "Light DJ" */;
 			buildPhases = (
+				19D04CB63D20E52928BEDD08 /* [CP] Check Pods Manifest.lock */,
 				4EDCF8FB2155D20200056AAD /* Sources */,
 				4EDCF8FC2155D20200056AAD /* Frameworks */,
 				4EDCF8FD2155D20200056AAD /* Resources */,
+				B1C413F848F2648819BCF093 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,11 +177,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19D04CB63D20E52928BEDD08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Light DJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C413F848F2648819BCF093 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Light DJ/Pods-Light DJ-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Light DJ/Pods-Light DJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EDCF8FB2155D20200056AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0ECDF3215C04A7007276E4 /* VisualizerSettingViewController.swift in Sources */,
 				4EDCF9052155D20200056AAD /* ViewController.swift in Sources */,
 				4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */,
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,
@@ -304,6 +373,7 @@
 		};
 		4EDCF9152155D20400056AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB133D81FD0D06B9BB67EDFB /* Pods-Light DJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +391,7 @@
 		};
 		4EDCF9162155D20400056AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434CE9E1F57C138947FCD097 /* Pods-Light DJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
