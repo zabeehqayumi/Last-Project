@@ -14,7 +14,6 @@ class VisualizerViewController: UIViewController {
     
     @IBOutlet var mellowEffects: [UIButton]!
     
-    
     @IBOutlet var activeEffects: [UIButton]!
     
     
