@@ -8,7 +8,10 @@
 
 import UIKit
 
-class SceneMakerViewController: UIViewController {
+class SceneMakerViewController: UIViewController{
+    
+    
+    @IBOutlet weak var tableview: UITableView!
     
     var arrOfCells : [UIImage] = [#imageLiteral(resourceName: "strobeCycle"), #imageLiteral(resourceName: "partyStrobe"), #imageLiteral(resourceName: "softStrobe"), #imageLiteral(resourceName: "fillCycle"), #imageLiteral(resourceName: "partyStrobe"), #imageLiteral(resourceName: "impact"), #imageLiteral(resourceName: "doubeWave"),#imageLiteral(resourceName: "vortext"), #imageLiteral(resourceName: "drip"), #imageLiteral(resourceName: "drip"), #imageLiteral(resourceName: "blur"), #imageLiteral(resourceName: "fillCycle-2"), #imageLiteral(resourceName: "swagger"), #imageLiteral(resourceName: "quickFlash"), #imageLiteral(resourceName: "fireworks-1"), #imageLiteral(resourceName: "fadeCycle"), #imageLiteral(resourceName: "doubleFill"), #imageLiteral(resourceName: "swirl"), #imageLiteral(resourceName: "swirl"), #imageLiteral(resourceName: "flip"), #imageLiteral(resourceName: "strobeCycle"), #imageLiteral(resourceName: "flip"), #imageLiteral(resourceName: "grooveWave"), #imageLiteral(resourceName: "ascent"), #imageLiteral(resourceName: "split"), #imageLiteral(resourceName: "growCycle")]
     
@@ -18,13 +21,10 @@ class SceneMakerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-        
-        
-
-        // Do any additional setup after loading the view.
-    }
+       //tableview.setEditing(true, animated: true)
+ 
+    
+        }
 
 
     @IBAction func visualizerButtonPressed(_ sender: Any) {
@@ -65,6 +65,7 @@ class SceneMakerViewController: UIViewController {
 
 extension SceneMakerViewController: UITableViewDelegate, UITableViewDataSource{
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return arrOfCells.count
@@ -82,10 +83,21 @@ extension SceneMakerViewController: UITableViewDelegate, UITableViewDataSource{
         return 55
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
 
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.none
     }
     
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+
+        swap(&arrOfCells[sourceIndexPath.row], &arrOfCells[destinationIndexPath.row])
+     
+        tableview.reloadData()
+    }
+
+    
+
     
 }
