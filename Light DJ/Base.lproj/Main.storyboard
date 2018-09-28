@@ -1144,6 +1144,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twisted Rainbow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DST-ry-vd6">
+                                <rect key="frame" x="166" y="120" width="152" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1159,7 +1166,9 @@
                             <constraint firstItem="rS9-XF-xho" firstAttribute="top" secondItem="IBg-cN-mBN" secondAttribute="bottom" constant="1" id="I3R-Eg-Wxa"/>
                             <constraint firstItem="kZi-xY-24W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="JC1-WO-LiI"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N1p-tC-sZ9"/>
+                            <constraint firstItem="DST-ry-vd6" firstAttribute="leading" secondItem="MiX-GH-izv" secondAttribute="trailing" constant="58" id="PFr-He-i7F"/>
                             <constraint firstItem="h9R-Jv-yok" firstAttribute="bottom" secondItem="oxl-XR-d62" secondAttribute="bottom" id="Q9a-fo-foi"/>
+                            <constraint firstItem="DST-ry-vd6" firstAttribute="top" secondItem="gcl-T1-brA" secondAttribute="bottom" constant="28" id="SDQ-xw-HaN"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SnS-Dc-1XK"/>
                             <constraint firstItem="gcl-T1-brA" firstAttribute="leading" secondItem="hIl-Lq-zab" secondAttribute="trailing" constant="12" id="TVn-hw-PBP"/>
                             <constraint firstItem="neO-Vq-v1R" firstAttribute="leading" secondItem="32j-3j-5xm" secondAttribute="leading" id="U6W-k5-RL0"/>
@@ -1172,6 +1181,7 @@
                             <constraint firstItem="v6U-kE-t65" firstAttribute="top" secondItem="MiX-GH-izv" secondAttribute="bottom" constant="8" symbolic="YES" id="ZuE-FJ-HxM"/>
                             <constraint firstItem="MiX-GH-izv" firstAttribute="top" secondItem="o27-XT-kAa" secondAttribute="bottom" constant="31" id="bba-Nz-lSD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32j-3j-5xm" secondAttribute="trailing" id="e1w-pD-coy"/>
+                            <constraint firstItem="rS9-XF-xho" firstAttribute="top" secondItem="DST-ry-vd6" secondAttribute="bottom" constant="8" symbolic="YES" id="ero-Kz-RwC"/>
                             <constraint firstItem="IBg-cN-mBN" firstAttribute="leading" secondItem="MiX-GH-izv" secondAttribute="trailing" constant="19" id="fDc-Sr-pDw"/>
                             <constraint firstItem="oxl-XR-d62" firstAttribute="leading" secondItem="o27-XT-kAa" secondAttribute="trailing" constant="10" id="gkT-dV-gRY"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gpX-Ia-C8O"/>
@@ -1189,6 +1199,7 @@
                             <constraint firstItem="IBg-cN-mBN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oRk-go-C9L"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kZi-xY-24W" secondAttribute="bottom" constant="27" id="pLL-Kt-Tu3"/>
                             <constraint firstItem="h9R-Jv-yok" firstAttribute="bottom" secondItem="o27-XT-kAa" secondAttribute="bottom" id="pVD-Go-bEv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DST-ry-vd6" secondAttribute="trailing" constant="57" id="qCb-I5-qv5"/>
                             <constraint firstItem="gcl-T1-brA" firstAttribute="top" secondItem="ZPq-bf-wDh" secondAttribute="top" id="uDG-w6-4oy"/>
                             <constraint firstItem="gcl-T1-brA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="166" id="x7x-EU-saC"/>
                             <constraint firstItem="o27-XT-kAa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="xSi-5b-T88"/>
@@ -1198,6 +1209,7 @@
                     </view>
                     <connections>
                         <outlet property="colorPallete" destination="v6U-kE-t65" id="gNh-j5-o4n"/>
+                        <outlet property="labelForDropDownMenu" destination="DST-ry-vd6" id="aWo-pc-McO"/>
                         <outletCollection property="buttonsCollection" destination="lYp-gq-1VC" collectionClass="NSMutableArray" id="14a-0v-gLv"/>
                         <outletCollection property="buttonsCollection" destination="VFg-Mo-xpW" collectionClass="NSMutableArray" id="nO5-so-4wH"/>
                         <outletCollection property="buttonsCollection" destination="gPV-rb-iJX" collectionClass="NSMutableArray" id="221-CK-iLf"/>

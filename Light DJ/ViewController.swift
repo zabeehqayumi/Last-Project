@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var hiddenController: [UIButton]!
     
     
+    @IBOutlet weak var labelForDropDownMenu: UILabel!
     
     // Hidden buttons collection for drop down menu and three top button for visualizer
     
@@ -75,58 +76,75 @@ class ViewController: UIViewController {
     // 1
     @IBAction func twistedRainbow(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "twistedrainbow-1")
+        labelForDropDownMenu.text = "Twisted Rainbow"
          dropDown()
 
     }
     // 2
     @IBAction func hawaiianSunrise(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "hawaiiansunrise")
+        labelForDropDownMenu.text = "Hawaiian sunrise"
          dropDown()
 
     }
     // 3
     @IBAction func greenDragon(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "greendragon")
+        labelForDropDownMenu.text = "Green Dragon"
+
          dropDown()
 
     }
     // 4
     @IBAction func rocketPop(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "rocketpop")
+        labelForDropDownMenu.text = "Rocket Pop"
          dropDown()
 
     }
     // 5
     @IBAction func blueDream(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "bluedream")
+        labelForDropDownMenu.text = "Blue Dream"
+
          dropDown()
 
     }
     // 6
     @IBAction func strawberryDaquiri(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "strawberrydaquiri")
+        labelForDropDownMenu.text = "Strawberry Daquiri"
+
          dropDown()
     }
     // 7
     @IBAction func srewdriver(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "screwdriver")
+        labelForDropDownMenu.text = "Screwdriver"
+
          dropDown()
 
     }
     // 8
     @IBAction func goodVibes(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "goodvibes")
+        labelForDropDownMenu.text = "Good Vibes"
+
          dropDown()
 
     }
     // 9
     @IBAction func fireAndRice(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "fireandice")
+        labelForDropDownMenu.text = "Fire and Ice"
+
         dropDown()
     }
     // 10
     @IBAction func electricSummer(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "electricsummer")
+        labelForDropDownMenu.text = "Electric Summer"
+
         dropDown()
     }
     
