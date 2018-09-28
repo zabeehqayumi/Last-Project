@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var hiddenController: [UIButton]!
+    
+    
+    
     // Hidden buttons collection for drop down menu and three top button for visualizer
     
     @IBOutlet var topThreeButtons: [UIButton]!
@@ -40,28 +44,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func collectorButtonPressed(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
-            
-        }
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        warning()
+
     }
     @IBAction func philipsButtonPressed(_ sender: Any) {
     }
     @IBAction func settingButtonPressed(_ sender: Any) {
     }
     @IBAction func lockColorButtonPressed(_ sender: Any) {
+        warning()
         
-        let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
-            
-        }
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
     }
     
     
@@ -168,6 +160,42 @@ class ViewController: UIViewController {
     
     }
     
+    @IBAction func controllerButtonPressed(_ sender: Any) {
+        hiddenController.forEach { (Button) in
+            UIView.animate(withDuration: 0.4, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
+    @IBAction func btn1Controls(_ sender: Any) {
+        hiddenController.forEach { (Button) in
+            UIView.animate(withDuration: 0.4, animations: {
+                Button.isHidden = !Button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    @IBAction func btn2Controls(_ sender: Any) {
+        warning()
+        
+    }
+    
+    
+    
+    func warning(){
+        
+        let alert = UIAlertController(title: "Lights Not Connected", message: "Could not connected to the a light network. Check your WiFi connection and that the bulbs can be controlled through their official apps", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
+            
+        }
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
     
     
     

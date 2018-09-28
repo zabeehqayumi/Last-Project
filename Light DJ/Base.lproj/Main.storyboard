@@ -932,9 +932,10 @@
                                 <rect key="frame" x="16" y="224" width="343" height="480"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-xY-24W">
-                                <rect key="frame" x="116" y="712" width="152" height="39"/>
+                                <rect key="frame" x="102" y="712" width="183" height="39"/>
                                 <state key="normal" image="controls"/>
                                 <connections>
+                                    <action selector="controllerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bp-1J-5uS"/>
                                     <action selector="controlsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p59-di-ZN6"/>
                                 </connections>
                             </button>
@@ -1116,6 +1117,33 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xih-bP-veT">
+                                <rect key="frame" x="19" y="767" width="0.0" height="0.0"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l2-22-bgQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="DiZ-Wi-I70"/>
+                                            <constraint firstAttribute="width" constant="340" id="n7b-3D-6mD"/>
+                                        </constraints>
+                                        <state key="normal" image="ViewControlButton"/>
+                                        <connections>
+                                            <action selector="btn1Controls:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38D-gB-GKR"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuP-Eu-zWc">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="136"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="340" id="547-iW-zHh"/>
+                                            <constraint firstAttribute="height" constant="136" id="E85-dd-gog"/>
+                                        </constraints>
+                                        <state key="normal" image="viewButtonRest"/>
+                                        <connections>
+                                            <action selector="btn2Controls:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6yy-7x-fbd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1123,12 +1151,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gcl-T1-brA" secondAttribute="bottom" constant="686" id="3gV-8K-P2M"/>
                             <constraint firstItem="IBg-cN-mBN" firstAttribute="trailing" secondItem="dVv-7f-gsQ" secondAttribute="trailing" id="4A7-rF-Trv"/>
                             <constraint firstItem="IBg-cN-mBN" firstAttribute="leading" secondItem="dVv-7f-gsQ" secondAttribute="leading" id="6c2-8s-GXy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xih-bP-veT" secondAttribute="bottom" constant="11" id="9Cu-rt-Kr6"/>
                             <constraint firstItem="MiX-GH-izv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9kl-cb-FIf"/>
                             <constraint firstItem="rS9-XF-xho" firstAttribute="trailing" secondItem="32j-3j-5xm" secondAttribute="trailing" constant="-16" id="AeN-bQ-KkG"/>
                             <constraint firstItem="ZPq-bf-wDh" firstAttribute="leading" secondItem="gcl-T1-brA" secondAttribute="trailing" constant="63" id="EAI-iP-dHy"/>
                             <constraint firstItem="jYR-mg-Yf3" firstAttribute="top" secondItem="o27-XT-kAa" secondAttribute="bottom" constant="-2" id="GjG-6K-tmp"/>
                             <constraint firstItem="rS9-XF-xho" firstAttribute="top" secondItem="IBg-cN-mBN" secondAttribute="bottom" constant="1" id="I3R-Eg-Wxa"/>
-                            <constraint firstItem="kZi-xY-24W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="JC1-WO-LiI"/>
+                            <constraint firstItem="kZi-xY-24W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="JC1-WO-LiI"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N1p-tC-sZ9"/>
                             <constraint firstItem="h9R-Jv-yok" firstAttribute="bottom" secondItem="oxl-XR-d62" secondAttribute="bottom" id="Q9a-fo-foi"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SnS-Dc-1XK"/>
@@ -1136,6 +1165,7 @@
                             <constraint firstItem="neO-Vq-v1R" firstAttribute="leading" secondItem="32j-3j-5xm" secondAttribute="leading" id="U6W-k5-RL0"/>
                             <constraint firstItem="v6U-kE-t65" firstAttribute="centerX" secondItem="32j-3j-5xm" secondAttribute="centerX" id="VCu-ax-8B8"/>
                             <constraint firstItem="kZi-xY-24W" firstAttribute="top" secondItem="v6U-kE-t65" secondAttribute="bottom" constant="8" symbolic="YES" id="Wfb-sJ-Lea"/>
+                            <constraint firstItem="Xih-bP-veT" firstAttribute="leading" secondItem="o27-XT-kAa" secondAttribute="leading" id="XkZ-JR-h4m"/>
                             <constraint firstItem="v6U-kE-t65" firstAttribute="trailing" secondItem="dVv-7f-gsQ" secondAttribute="trailing" id="XwP-dH-bky"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="32j-3j-5xm" secondAttribute="bottom" constant="-34" id="YGd-at-H8j"/>
                             <constraint firstItem="dVv-7f-gsQ" firstAttribute="bottom" secondItem="32j-3j-5xm" secondAttribute="bottom" constant="-596" id="Z9w-9E-6Tq"/>
@@ -1151,7 +1181,7 @@
                             <constraint firstItem="dVv-7f-gsQ" firstAttribute="top" secondItem="IBg-cN-mBN" secondAttribute="bottom" constant="17" id="j7T-pz-Lbc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v6U-kE-t65" secondAttribute="bottom" constant="74" id="kJ9-hl-FZc"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-48" id="kQ0-lC-M6Z"/>
-                            <constraint firstItem="kZi-xY-24W" firstAttribute="centerX" secondItem="32j-3j-5xm" secondAttribute="centerX" constant="4.5" id="kga-wn-s3o"/>
+                            <constraint firstItem="kZi-xY-24W" firstAttribute="centerX" secondItem="32j-3j-5xm" secondAttribute="centerX" constant="6" id="kga-wn-s3o"/>
                             <constraint firstItem="32j-3j-5xm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="mNb-JS-eFa"/>
                             <constraint firstItem="MiX-GH-izv" firstAttribute="trailing" secondItem="oxl-XR-d62" secondAttribute="trailing" id="nOf-Sp-BM4"/>
                             <constraint firstItem="h9R-Jv-yok" firstAttribute="leading" secondItem="ZPq-bf-wDh" secondAttribute="trailing" constant="8" symbolic="YES" id="nZl-p0-obQ"/>
@@ -1182,11 +1212,13 @@
                         <outletCollection property="topThreeButtons" destination="neO-Vq-v1R" collectionClass="NSMutableArray" id="YhN-cP-3Lq"/>
                         <outletCollection property="topThreeButtons" destination="L5X-30-lhD" collectionClass="NSMutableArray" id="o2K-h5-0Af"/>
                         <outletCollection property="topThreeButtons" destination="crE-C4-LmS" collectionClass="NSMutableArray" id="t4Y-Ap-k8m"/>
+                        <outletCollection property="hiddenController" destination="7l2-22-bgQ" collectionClass="NSMutableArray" id="2ib-6T-gC5"/>
+                        <outletCollection property="hiddenController" destination="wuP-Eu-zWc" collectionClass="NSMutableArray" id="w8w-7C-Odw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="-1405"/>
+            <point key="canvasLocation" x="252" y="-1405.4187192118227"/>
         </scene>
         <!--Settings-->
         <scene sceneID="M9e-Sr-Bzl">
@@ -1540,6 +1572,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ViewControlButton" width="664" height="54"/>
         <image name="autoplay" width="444" height="86"/>
         <image name="brush" width="430" height="64"/>
         <image name="burgerButton" width="80" height="74"/>
@@ -1575,16 +1608,17 @@
         <image name="twistedRainbow" width="1646" height="316"/>
         <image name="vSetting" width="632" height="970"/>
         <image name="vSettingDismiss" width="462" height="90"/>
+        <image name="viewButtonRest" width="654" height="270"/>
         <image name="visuallizer" width="1274" height="532"/>
         <image name="volume trigger" width="668" height="138"/>
         <image name="xxx" width="80" height="78"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aXU-Q3-f1E"/>
-        <segue reference="U4v-zA-12Q"/>
-        <segue reference="qDe-AS-jBG"/>
+        <segue reference="jGA-lf-s3n"/>
+        <segue reference="8UC-fR-vcx"/>
+        <segue reference="XAp-cX-avy"/>
         <segue reference="Mpb-R3-BHV"/>
-        <segue reference="KFD-f0-Cld"/>
-        <segue reference="TDr-Ha-Eg2"/>
+        <segue reference="CTz-He-Jjp"/>
+        <segue reference="w0s-54-wwz"/>
     </inferredMetricsTieBreakers>
 </document>
