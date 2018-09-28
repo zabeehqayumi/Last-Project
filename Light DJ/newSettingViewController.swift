@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class newSettingViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class newSettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
 
         // Do any additional setup after loading the view.
     }
@@ -53,14 +56,19 @@ class newSettingViewController: UIViewController {
             })
         }
     }
+    
+    
+    // Warning for all of the buttons
+    
     func warning(){
         let alert = UIAlertController(title: "Pro-only Freature", message: "Thid feature is only available for Pro users. Upgrade to Light DJ to create and configure your own effect sheets", preferredStyle: .alert)
         let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
             
         }
         let action1 = UIAlertAction(title: "Upgrade Now", style: .default) { (action) in
+    
             if let url = URL(string: "https://itunes.apple.com/us/app/light-dj-pro-for-smart-lights/id963524356?mt=8"){
-                UIApplication.shared.canOpenURL(url)
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
         }
         
