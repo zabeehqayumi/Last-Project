@@ -852,7 +852,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rni-RL-wRC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rni-RL-wRC">
                                 <rect key="frame" x="0.0" y="44" width="375" height="646"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXo-PG-g8z">
@@ -888,8 +888,8 @@
                         <viewLayoutGuide key="safeArea" id="x2R-yo-tFQ"/>
                     </view>
                     <connections>
-                        <outlet property="pageController" destination="rni-RL-wRC" id="rwp-bN-IJ4"/>
                         <outlet property="pageController1" destination="B9y-DT-Vlw" id="Wga-Lr-u55"/>
+                        <outlet property="scrollView" destination="rni-RL-wRC" id="MEJ-sA-sBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVb-6x-Ioq" userLabel="First Responder" sceneMemberID="firstResponder"/>
