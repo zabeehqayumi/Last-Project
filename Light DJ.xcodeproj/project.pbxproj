@@ -15,6 +15,7 @@
 		4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */; };
 		4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149D121574C730018F3C6 /* VisualizerViewController.swift */; };
 		4EA5FB462159A84300903D9A /* SceneMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */; };
+		4EA7332421617D8F003342B7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7332321617D8F003342B7 /* PageViewController.swift */; };
 		4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9022155D20200056AAD /* AppDelegate.swift */; };
 		4EDCF9052155D20200056AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9042155D20200056AAD /* ViewController.swift */; };
 		4EDCF9082155D20200056AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCF9062155D20200056AAD /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4E1149D121574C730018F3C6 /* VisualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizerViewController.swift; sourceTree = "<group>"; };
 		4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneMakerViewController.swift; sourceTree = "<group>"; };
+		4EA7332321617D8F003342B7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		4EDCF8FF2155D20200056AAD /* Light DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDCF9022155D20200056AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDCF9042155D20200056AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */,
 				4EF6C267215DB870009815EF /* newSettingViewController.swift */,
 				4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */,
+				4EA7332321617D8F003342B7 /* PageViewController.swift */,
 				4EDCF9062155D20200056AAD /* Main.storyboard */,
 				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
 				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
@@ -230,6 +233,7 @@
 				4E0ECDF3215C04A7007276E4 /* VisualizerSettingViewController.swift in Sources */,
 				4E0ECDF5215C285C007276E4 /* SceneMakerTableViewCell.swift in Sources */,
 				4EDCF9052155D20200056AAD /* ViewController.swift in Sources */,
+				4EA7332421617D8F003342B7 /* PageViewController.swift in Sources */,
 				4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */,
 				4EF6C268215DB870009815EF /* newSettingViewController.swift in Sources */,
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,

@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     // 2
     @IBAction func hawaiianSunrise(_ sender: Any) {
         self.colorPallete.image = UIImage(named: "hawaiiansunrise")
-        labelForDropDownMenu.text = "Hawaiian sunrise"
+        labelForDropDownMenu.text = "Hawaiian Sunrise"
          dropDown()
 
     }
