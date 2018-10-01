@@ -96,6 +96,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		4EA7333C2162CBA1003342B7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EDCF9042155D20200056AAD /* ViewController.swift */,
+				4E1149C92155F3C10018F3C6 /* HelpViewController.swift */,
+				4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */,
+				4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */,
+				4E1149D121574C730018F3C6 /* VisualizerViewController.swift */,
+				4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */,
+				4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */,
+				4EF6C267215DB870009815EF /* newSettingViewController.swift */,
+				4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */,
+				4EA7332321617D8F003342B7 /* PageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4EA7333D2162CBC0003342B7 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
+				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
+				4EDCF9112155D20400056AAD /* Info.plist */,
+				4EDCF9092155D20200056AAD /* Light_DJ.xcdatamodeld */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		4EA7333E2162CBD5003342B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDCF9062155D20200056AAD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4EDCF8F62155D20200056AAD = {
 			isa = PBXGroup;
 			children = (
@@ -119,21 +155,9 @@
 			children = (
 				4EA733292162A30F003342B7 /* Cell */,
 				4EDCF9022155D20200056AAD /* AppDelegate.swift */,
-				4EDCF9042155D20200056AAD /* ViewController.swift */,
-				4E1149C92155F3C10018F3C6 /* HelpViewController.swift */,
-				4E1149CB2155F84B0018F3C6 /* PhilipsTableViewController.swift */,
-				4E1149CF2156E4AB0018F3C6 /* SettingsTableViewController.swift */,
-				4E1149D121574C730018F3C6 /* VisualizerViewController.swift */,
-				4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */,
-				4E0ECDF2215C04A7007276E4 /* VisualizerSettingViewController.swift */,
-				4EF6C267215DB870009815EF /* newSettingViewController.swift */,
-				4E0ECDF4215C285C007276E4 /* SceneMakerTableViewCell.swift */,
-				4EA7332321617D8F003342B7 /* PageViewController.swift */,
-				4EDCF9062155D20200056AAD /* Main.storyboard */,
-				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
-				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
-				4EDCF9112155D20400056AAD /* Info.plist */,
-				4EDCF9092155D20200056AAD /* Light_DJ.xcdatamodeld */,
+				4EA7333C2162CBA1003342B7 /* ViewControllers */,
+				4EA7333E2162CBD5003342B7 /* View */,
+				4EA7333D2162CBC0003342B7 /* Supporting */,
 			);
 			path = "Light DJ";
 			sourceTree = "<group>";
