@@ -43,10 +43,6 @@ class PageViewController: UIViewController, UIScrollViewDelegate {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageController1.currentPage = Int(pageNumber)
     }
-    
-    
-    
-    
 
     @IBAction func closeButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

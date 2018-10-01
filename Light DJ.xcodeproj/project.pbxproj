@@ -16,6 +16,10 @@
 		4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1149D121574C730018F3C6 /* VisualizerViewController.swift */; };
 		4EA5FB462159A84300903D9A /* SceneMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */; };
 		4EA7332421617D8F003342B7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7332321617D8F003342B7 /* PageViewController.swift */; };
+		4EA7332C2162A33A003342B7 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7332A2162A33A003342B7 /* FirstTableViewCell.swift */; };
+		4EA7332D2162A33A003342B7 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7332B2162A33A003342B7 /* FirstTableViewCell.xib */; };
+		4EA733302162A3D2003342B7 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7332E2162A3D2003342B7 /* SecondTableViewCell.swift */; };
+		4EA733312162A3D2003342B7 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */; };
 		4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9022155D20200056AAD /* AppDelegate.swift */; };
 		4EDCF9052155D20200056AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9042155D20200056AAD /* ViewController.swift */; };
 		4EDCF9082155D20200056AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCF9062155D20200056AAD /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 		4E1149D121574C730018F3C6 /* VisualizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizerViewController.swift; sourceTree = "<group>"; };
 		4EA5FB452159A84300903D9A /* SceneMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneMakerViewController.swift; sourceTree = "<group>"; };
 		4EA7332321617D8F003342B7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4EA7332A2162A33A003342B7 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		4EA7332B2162A33A003342B7 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		4EA7332E2162A3D2003342B7 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		4EDCF8FF2155D20200056AAD /* Light DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDCF9022155D20200056AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDCF9042155D20200056AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4EA733292162A30F003342B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4EA7332A2162A33A003342B7 /* FirstTableViewCell.swift */,
+				4EA7332B2162A33A003342B7 /* FirstTableViewCell.xib */,
+				4EA7332E2162A3D2003342B7 /* SecondTableViewCell.swift */,
+				4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4EDCF8F62155D20200056AAD = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +117,7 @@
 		4EDCF9012155D20200056AAD /* Light DJ */ = {
 			isa = PBXGroup;
 			children = (
+				4EA733292162A30F003342B7 /* Cell */,
 				4EDCF9022155D20200056AAD /* AppDelegate.swift */,
 				4EDCF9042155D20200056AAD /* ViewController.swift */,
 				4E1149C92155F3C10018F3C6 /* HelpViewController.swift */,
@@ -180,6 +200,8 @@
 			files = (
 				4EDCF9102155D20400056AAD /* LaunchScreen.storyboard in Resources */,
 				4EDCF90D2155D20400056AAD /* Assets.xcassets in Resources */,
+				4EA733312162A3D2003342B7 /* SecondTableViewCell.xib in Resources */,
+				4EA7332D2162A33A003342B7 /* FirstTableViewCell.xib in Resources */,
 				4EDCF9082155D20200056AAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +257,8 @@
 				4EDCF9052155D20200056AAD /* ViewController.swift in Sources */,
 				4EA7332421617D8F003342B7 /* PageViewController.swift in Sources */,
 				4E1149D221574C730018F3C6 /* VisualizerViewController.swift in Sources */,
+				4EA733302162A3D2003342B7 /* SecondTableViewCell.swift in Sources */,
+				4EA7332C2162A33A003342B7 /* FirstTableViewCell.swift in Sources */,
 				4EF6C268215DB870009815EF /* newSettingViewController.swift in Sources */,
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,
 				4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */,
