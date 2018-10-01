@@ -29,7 +29,8 @@ class SettingsTableViewController: UITableViewController {
         self.tableView.backgroundColor = UIColor.black
         
         arrOfData = [cellData(cell: 1, image: #imageLiteral(resourceName: "firstCell"), text: ""),
-                     cellData(cell: 2, image: #imageLiteral(resourceName: "selectIcon"), text: "")]
+                     cellData(cell: 2, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
+                     cellData(cell: 3, image: #imageLiteral(resourceName: "selectIcon"), text: "")]
 
 
 
@@ -66,6 +67,14 @@ class SettingsTableViewController: UITableViewController {
 
             
         }
+        else if arrOfData[indexPath.row].cell == 3 {
+            
+            let cell = Bundle.main.loadNibNamed("ThirdTableViewCell", owner: self, options: nil)?.first as! ThirdTableViewCell
+            
+            return cell
+            
+            
+        }
         else{
             // default
             
@@ -89,6 +98,11 @@ class SettingsTableViewController: UITableViewController {
         
     }
     else if arrOfData[indexPath.row].cell == 2 {
+        
+        return 50
+        
+    }
+    else if arrOfData[indexPath.row].cell == 3 {
         
         return 50
         
