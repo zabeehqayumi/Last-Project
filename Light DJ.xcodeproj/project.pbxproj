@@ -118,7 +118,6 @@
 			children = (
 				4EDCF90C2155D20400056AAD /* Assets.xcassets */,
 				4EDCF90E2155D20400056AAD /* LaunchScreen.storyboard */,
-				4EDCF9112155D20400056AAD /* Info.plist */,
 				4EDCF9092155D20200056AAD /* Light_DJ.xcdatamodeld */,
 			);
 			path = Supporting;
@@ -158,6 +157,7 @@
 				4EA7333C2162CBA1003342B7 /* ViewControllers */,
 				4EA7333E2162CBD5003342B7 /* View */,
 				4EA7333D2162CBC0003342B7 /* Supporting */,
+				4EDCF9112155D20400056AAD /* Info.plist */,
 			);
 			path = "Light DJ";
 			sourceTree = "<group>";
