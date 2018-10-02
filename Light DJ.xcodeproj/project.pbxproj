@@ -36,6 +36,8 @@
 		4ED91877216339B40038283F /* NinethTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED91875216339B40038283F /* NinethTableViewCell.xib */; };
 		4ED9187A21633DCD0038283F /* TenthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9187821633DCD0038283F /* TenthTableViewCell.swift */; };
 		4ED9187B21633DCD0038283F /* TenthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9187921633DCD0038283F /* TenthTableViewCell.xib */; };
+		4ED9187E216340230038283F /* EleventhTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9187C216340230038283F /* EleventhTableViewCell.swift */; };
+		4ED9187F216340230038283F /* EleventhTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9187D216340230038283F /* EleventhTableViewCell.xib */; };
 		4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9022155D20200056AAD /* AppDelegate.swift */; };
 		4EDCF9052155D20200056AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9042155D20200056AAD /* ViewController.swift */; };
 		4EDCF9082155D20200056AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCF9062155D20200056AAD /* Main.storyboard */; };
@@ -75,6 +77,8 @@
 		4ED91875216339B40038283F /* NinethTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NinethTableViewCell.xib; sourceTree = "<group>"; };
 		4ED9187821633DCD0038283F /* TenthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthTableViewCell.swift; sourceTree = "<group>"; };
 		4ED9187921633DCD0038283F /* TenthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenthTableViewCell.xib; sourceTree = "<group>"; };
+		4ED9187C216340230038283F /* EleventhTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleventhTableViewCell.swift; sourceTree = "<group>"; };
+		4ED9187D216340230038283F /* EleventhTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EleventhTableViewCell.xib; sourceTree = "<group>"; };
 		4EDCF8FF2155D20200056AAD /* Light DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDCF9022155D20200056AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDCF9042155D20200056AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +121,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4EA733292162A30F003342B7 /* Cell */ = {
+		4EA733292162A30F003342B7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				4EA7332A2162A33A003342B7 /* FirstTableViewCell.swift */,
@@ -140,8 +144,10 @@
 				4ED91875216339B40038283F /* NinethTableViewCell.xib */,
 				4ED9187821633DCD0038283F /* TenthTableViewCell.swift */,
 				4ED9187921633DCD0038283F /* TenthTableViewCell.xib */,
+				4ED9187C216340230038283F /* EleventhTableViewCell.swift */,
+				4ED9187D216340230038283F /* EleventhTableViewCell.xib */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		4EA7333C2162CBA1003342B7 /* ViewControllers */ = {
@@ -201,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4EDCF9022155D20200056AAD /* AppDelegate.swift */,
-				4EA733292162A30F003342B7 /* Cell */,
+				4EA733292162A30F003342B7 /* Cells */,
 				4EA7333C2162CBA1003342B7 /* ViewControllers */,
 				4EA7333E2162CBD5003342B7 /* View */,
 				4EA7333D2162CBC0003342B7 /* Supporting */,
@@ -272,6 +278,7 @@
 			files = (
 				4EDCF9102155D20400056AAD /* LaunchScreen.storyboard in Resources */,
 				4ED9186B2162EFD60038283F /* SixthTableViewCell.xib in Resources */,
+				4ED9187F216340230038283F /* EleventhTableViewCell.xib in Resources */,
 				4ED9187B21633DCD0038283F /* TenthTableViewCell.xib in Resources */,
 				4EDCF90D2155D20400056AAD /* Assets.xcassets in Resources */,
 				4ED9186F2162F2B80038283F /* SeventhTableViewCell.xib in Resources */,
@@ -349,6 +356,7 @@
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,
 				4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */,
 				4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */,
+				4ED9187E216340230038283F /* EleventhTableViewCell.swift in Sources */,
 				4E1149CC2155F84B0018F3C6 /* PhilipsTableViewController.swift in Sources */,
 				4EA5FB462159A84300903D9A /* SceneMakerViewController.swift in Sources */,
 				4E1149CA2155F3C10018F3C6 /* HelpViewController.swift in Sources */,

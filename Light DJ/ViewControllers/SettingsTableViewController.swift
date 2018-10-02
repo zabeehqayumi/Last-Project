@@ -35,7 +35,8 @@ class SettingsTableViewController: UITableViewController {
                      cellData(cell: 7, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
                      cellData(cell: 8, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
                      cellData(cell: 9, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
-                     cellData(cell: 10, image: #imageLiteral(resourceName: "appPreferences"), text: "")]
+                     cellData(cell: 10, image: #imageLiteral(resourceName: "appPreferences"), text: ""),
+                     cellData(cell: 11, image: #imageLiteral(resourceName: "appPreferences"), text: "")]
     }
 
     // MARK: - Table view data source
@@ -119,6 +120,13 @@ class SettingsTableViewController: UITableViewController {
             return cell
             
         }
+        else if arrOfData[indexPath.row].cell == 11 {
+            
+            let cell = Bundle.main.loadNibNamed("EleventhTableViewCell", owner: self, options: nil)?.first as! EleventhTableViewCell
+            
+            return cell
+            
+        }
         else{
             // default
           let cell =  Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
@@ -141,7 +149,7 @@ class SettingsTableViewController: UITableViewController {
         return 50
     }
     else if arrOfData[indexPath.row].cell == 5 {
-        return 47
+        return 45
     }
     else if arrOfData[indexPath.row].cell == 6 {
         return 50
@@ -150,13 +158,16 @@ class SettingsTableViewController: UITableViewController {
         return 50
     }
     else if arrOfData[indexPath.row].cell == 8 {
-        return 47
+        return 45
     }
     else if arrOfData[indexPath.row].cell == 9 {
         return 50
     }
     else if arrOfData[indexPath.row].cell == 10 {
-        return 47
+        return 45
+    }
+    else if arrOfData[indexPath.row].cell == 11 {
+        return 50
     }
     else{
         
