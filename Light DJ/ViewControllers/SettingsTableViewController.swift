@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 struct cellData {
     let cell : Int!
     let image : UIImage!
@@ -23,7 +22,6 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // cutomize cell
         
         self.tableView.backgroundColor = UIColor.black
@@ -34,10 +32,10 @@ class SettingsTableViewController: UITableViewController {
                      cellData(cell: 4, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
                      cellData(cell: 5, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
                      cellData(cell: 6, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
-                     cellData(cell: 7, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: "")]
-
-
-
+                     cellData(cell: 7, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
+                     cellData(cell: 8, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
+                     cellData(cell: 9, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
+                     cellData(cell: 10, image: #imageLiteral(resourceName: "appPreferences"), text: "")]
     }
 
     // MARK: - Table view data source
@@ -98,13 +96,34 @@ class SettingsTableViewController: UITableViewController {
             return cell
             
         }
+        else if arrOfData[indexPath.row].cell == 8 {
+            
+            let cell = Bundle.main.loadNibNamed("EighthTableViewCell", owner: self, options: nil)?.first as! EighthTableViewCell
+            cell.img.image = arrOfData[indexPath.row].image
+
+            return cell
+            
+        }
+        else if arrOfData[indexPath.row].cell == 9 {
+            
+            let cell = Bundle.main.loadNibNamed("NinethTableViewCell", owner: self, options: nil)?.first as! NinethTableViewCell
+            
+            return cell
+            
+        }
+        else if arrOfData[indexPath.row].cell == 10 {
+            
+            let cell = Bundle.main.loadNibNamed("TenthTableViewCell", owner: self, options: nil)?.first as! TenthTableViewCell
+            cell.img.image = arrOfData[indexPath.row].image
+            
+            return cell
+            
+        }
         else{
             // default
           let cell =  Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
             return cell
         }
-        
-        
         
     }
     
@@ -122,7 +141,7 @@ class SettingsTableViewController: UITableViewController {
         return 50
     }
     else if arrOfData[indexPath.row].cell == 5 {
-        return 40
+        return 47
     }
     else if arrOfData[indexPath.row].cell == 6 {
         return 50
@@ -130,14 +149,21 @@ class SettingsTableViewController: UITableViewController {
     else if arrOfData[indexPath.row].cell == 7 {
         return 50
     }
+    else if arrOfData[indexPath.row].cell == 8 {
+        return 47
+    }
+    else if arrOfData[indexPath.row].cell == 9 {
+        return 50
+    }
+    else if arrOfData[indexPath.row].cell == 10 {
+        return 47
+    }
     else{
+        
         // default
         return 50
     }
-    
-    
-    
-    
+
             }
 
     @IBAction func doneButtonPressed(_ sender: Any) {
