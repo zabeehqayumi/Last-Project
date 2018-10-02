@@ -38,6 +38,8 @@
 		4ED9187B21633DCD0038283F /* TenthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9187921633DCD0038283F /* TenthTableViewCell.xib */; };
 		4ED9187E216340230038283F /* EleventhTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9187C216340230038283F /* EleventhTableViewCell.swift */; };
 		4ED9187F216340230038283F /* EleventhTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9187D216340230038283F /* EleventhTableViewCell.xib */; };
+		4ED918822164207C0038283F /* TwelvedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED918802164207C0038283F /* TwelvedTableViewCell.swift */; };
+		4ED918832164207C0038283F /* TwelvedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED918812164207C0038283F /* TwelvedTableViewCell.xib */; };
 		4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9022155D20200056AAD /* AppDelegate.swift */; };
 		4EDCF9052155D20200056AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9042155D20200056AAD /* ViewController.swift */; };
 		4EDCF9082155D20200056AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCF9062155D20200056AAD /* Main.storyboard */; };
@@ -79,6 +81,8 @@
 		4ED9187921633DCD0038283F /* TenthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenthTableViewCell.xib; sourceTree = "<group>"; };
 		4ED9187C216340230038283F /* EleventhTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleventhTableViewCell.swift; sourceTree = "<group>"; };
 		4ED9187D216340230038283F /* EleventhTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EleventhTableViewCell.xib; sourceTree = "<group>"; };
+		4ED918802164207C0038283F /* TwelvedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelvedTableViewCell.swift; sourceTree = "<group>"; };
+		4ED918812164207C0038283F /* TwelvedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwelvedTableViewCell.xib; sourceTree = "<group>"; };
 		4EDCF8FF2155D20200056AAD /* Light DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDCF9022155D20200056AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDCF9042155D20200056AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				4ED9187921633DCD0038283F /* TenthTableViewCell.xib */,
 				4ED9187C216340230038283F /* EleventhTableViewCell.swift */,
 				4ED9187D216340230038283F /* EleventhTableViewCell.xib */,
+				4ED918802164207C0038283F /* TwelvedTableViewCell.swift */,
+				4ED918812164207C0038283F /* TwelvedTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				4ED9187F216340230038283F /* EleventhTableViewCell.xib in Resources */,
 				4ED9187B21633DCD0038283F /* TenthTableViewCell.xib in Resources */,
 				4EDCF90D2155D20400056AAD /* Assets.xcassets in Resources */,
+				4ED918832164207C0038283F /* TwelvedTableViewCell.xib in Resources */,
 				4ED9186F2162F2B80038283F /* SeventhTableViewCell.xib in Resources */,
 				4EA733312162A3D2003342B7 /* SecondTableViewCell.xib in Resources */,
 				4ED91877216339B40038283F /* NinethTableViewCell.xib in Resources */,
@@ -350,6 +357,7 @@
 				4EA733302162A3D2003342B7 /* SecondTableViewCell.swift in Sources */,
 				4ED9187A21633DCD0038283F /* TenthTableViewCell.swift in Sources */,
 				4EA7332C2162A33A003342B7 /* FirstTableViewCell.swift in Sources */,
+				4ED918822164207C0038283F /* TwelvedTableViewCell.swift in Sources */,
 				4EF6C268215DB870009815EF /* newSettingViewController.swift in Sources */,
 				4ED918662162EDB20038283F /* FifthTableViewCell.swift in Sources */,
 				4ED91876216339B40038283F /* NinethTableViewCell.swift in Sources */,

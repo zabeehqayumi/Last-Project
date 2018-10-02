@@ -40,6 +40,7 @@ class PageViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageController1.currentPage = Int(pageNumber)
     }

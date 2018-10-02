@@ -36,7 +36,8 @@ class SettingsTableViewController: UITableViewController {
                      cellData(cell: 8, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
                      cellData(cell: 9, image: #imageLiteral(resourceName: "nanoLeafSettings"), text: ""),
                      cellData(cell: 10, image: #imageLiteral(resourceName: "appPreferences"), text: ""),
-                     cellData(cell: 11, image: #imageLiteral(resourceName: "appPreferences"), text: "")]
+                     cellData(cell: 11, image: #imageLiteral(resourceName: "appPreferences"), text: ""),
+                     cellData(cell: 12, image: #imageLiteral(resourceName: "lastCell"), text: "")]
     }
 
     // MARK: - Table view data source
@@ -127,6 +128,14 @@ class SettingsTableViewController: UITableViewController {
             return cell
             
         }
+        else if arrOfData[indexPath.row].cell == 12 {
+            
+            let cell = Bundle.main.loadNibNamed("TwelvedTableViewCell", owner: self, options: nil)?.first as! TwelvedTableViewCell
+            cell.img.image = arrOfData[indexPath.row].image
+        
+            return cell
+            
+        }
         else{
             // default
           let cell =  Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
@@ -168,6 +177,9 @@ class SettingsTableViewController: UITableViewController {
     }
     else if arrOfData[indexPath.row].cell == 11 {
         return 50
+    }
+    else if arrOfData[indexPath.row].cell == 12 {
+        return 590
     }
     else{
         
