@@ -22,6 +22,10 @@
 		4EA733312162A3D2003342B7 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */; };
 		4ED9185E2162E6E50038283F /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9185C2162E6E50038283F /* ThirdTableViewCell.swift */; };
 		4ED9185F2162E6E50038283F /* ThirdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED9185D2162E6E50038283F /* ThirdTableViewCell.xib */; };
+		4ED918622162E9860038283F /* FourthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED918602162E9860038283F /* FourthTableViewCell.swift */; };
+		4ED918632162E9860038283F /* FourthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED918612162E9860038283F /* FourthTableViewCell.xib */; };
+		4ED918662162EDB20038283F /* FifthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED918642162EDB20038283F /* FifthTableViewCell.swift */; };
+		4ED918672162EDB20038283F /* FifthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED918652162EDB20038283F /* FifthTableViewCell.xib */; };
 		4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9022155D20200056AAD /* AppDelegate.swift */; };
 		4EDCF9052155D20200056AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCF9042155D20200056AAD /* ViewController.swift */; };
 		4EDCF9082155D20200056AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDCF9062155D20200056AAD /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
 		4ED9185C2162E6E50038283F /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
 		4ED9185D2162E6E50038283F /* ThirdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdTableViewCell.xib; sourceTree = "<group>"; };
+		4ED918602162E9860038283F /* FourthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTableViewCell.swift; sourceTree = "<group>"; };
+		4ED918612162E9860038283F /* FourthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthTableViewCell.xib; sourceTree = "<group>"; };
+		4ED918642162EDB20038283F /* FifthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthTableViewCell.swift; sourceTree = "<group>"; };
+		4ED918652162EDB20038283F /* FifthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthTableViewCell.xib; sourceTree = "<group>"; };
 		4EDCF8FF2155D20200056AAD /* Light DJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light DJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDCF9022155D20200056AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDCF9042155D20200056AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,10 @@
 				4EA7332F2162A3D2003342B7 /* SecondTableViewCell.xib */,
 				4ED9185C2162E6E50038283F /* ThirdTableViewCell.swift */,
 				4ED9185D2162E6E50038283F /* ThirdTableViewCell.xib */,
+				4ED918602162E9860038283F /* FourthTableViewCell.swift */,
+				4ED918612162E9860038283F /* FourthTableViewCell.xib */,
+				4ED918642162EDB20038283F /* FifthTableViewCell.swift */,
+				4ED918652162EDB20038283F /* FifthTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -231,9 +243,11 @@
 				4EDCF9102155D20400056AAD /* LaunchScreen.storyboard in Resources */,
 				4EDCF90D2155D20400056AAD /* Assets.xcassets in Resources */,
 				4EA733312162A3D2003342B7 /* SecondTableViewCell.xib in Resources */,
+				4ED918672162EDB20038283F /* FifthTableViewCell.xib in Resources */,
 				4EA7332D2162A33A003342B7 /* FirstTableViewCell.xib in Resources */,
 				4EDCF9082155D20200056AAD /* Main.storyboard in Resources */,
 				4ED9185F2162E6E50038283F /* ThirdTableViewCell.xib in Resources */,
+				4ED918632162E9860038283F /* FourthTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +306,14 @@
 				4EA733302162A3D2003342B7 /* SecondTableViewCell.swift in Sources */,
 				4EA7332C2162A33A003342B7 /* FirstTableViewCell.swift in Sources */,
 				4EF6C268215DB870009815EF /* newSettingViewController.swift in Sources */,
+				4ED918662162EDB20038283F /* FifthTableViewCell.swift in Sources */,
 				4EDCF90B2155D20200056AAD /* Light_DJ.xcdatamodeld in Sources */,
 				4E1149D02156E4AB0018F3C6 /* SettingsTableViewController.swift in Sources */,
 				4EDCF9032155D20200056AAD /* AppDelegate.swift in Sources */,
 				4E1149CC2155F84B0018F3C6 /* PhilipsTableViewController.swift in Sources */,
 				4EA5FB462159A84300903D9A /* SceneMakerViewController.swift in Sources */,
 				4E1149CA2155F3C10018F3C6 /* HelpViewController.swift in Sources */,
+				4ED918622162E9860038283F /* FourthTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

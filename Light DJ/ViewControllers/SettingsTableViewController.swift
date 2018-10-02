@@ -30,7 +30,9 @@ class SettingsTableViewController: UITableViewController {
         
         arrOfData = [cellData(cell: 1, image: #imageLiteral(resourceName: "firstCell"), text: ""),
                      cellData(cell: 2, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
-                     cellData(cell: 3, image: #imageLiteral(resourceName: "selectIcon"), text: "")]
+                     cellData(cell: 3, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
+                     cellData(cell: 4, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
+                     cellData(cell: 5, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: "")]
 
 
 
@@ -50,13 +52,10 @@ class SettingsTableViewController: UITableViewController {
         
         
         if arrOfData[indexPath.row].cell == 1 {
-            
             let cell = Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
             
             cell.firstCellImg.image = arrOfData[indexPath.row].image
-            
             return cell
-            
             
         }
         else if arrOfData[indexPath.row].cell == 2 {
@@ -65,24 +64,30 @@ class SettingsTableViewController: UITableViewController {
      
             return cell
 
-            
         }
         else if arrOfData[indexPath.row].cell == 3 {
             
             let cell = Bundle.main.loadNibNamed("ThirdTableViewCell", owner: self, options: nil)?.first as! ThirdTableViewCell
-            
             return cell
             
+        }
+        else if arrOfData[indexPath.row].cell == 4 {
+            
+            let cell = Bundle.main.loadNibNamed("FourthTableViewCell", owner: self, options: nil)?.first as! FourthTableViewCell
+            return cell
+            
+        }
+        else if arrOfData[indexPath.row].cell == 5 {
+            
+            let cell = Bundle.main.loadNibNamed("FifthTableViewCell", owner: self, options: nil)?.first as! FifthTableViewCell
+            cell.img.image = arrOfData[indexPath.row].image
+            return cell
             
         }
         else{
             // default
-            
-          let cell =  Bundle.main.loadNibNamed("SecondTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
-         
+          let cell =  Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
             return cell
-
-            
         }
         
         
@@ -91,26 +96,23 @@ class SettingsTableViewController: UITableViewController {
     
    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     if arrOfData[indexPath.row].cell == 1 {
-        
         return 250
-        
-
-        
     }
     else if arrOfData[indexPath.row].cell == 2 {
-        
         return 50
-        
     }
     else if arrOfData[indexPath.row].cell == 3 {
-        
         return 50
-        
+    }
+    else if arrOfData[indexPath.row].cell == 4 {
+        return 50
+    }
+    else if arrOfData[indexPath.row].cell == 5 {
+        return 40
     }
     else{
         // default
         return 50
-        
     }
     
     
