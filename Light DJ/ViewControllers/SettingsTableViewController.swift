@@ -32,7 +32,9 @@ class SettingsTableViewController: UITableViewController {
                      cellData(cell: 2, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
                      cellData(cell: 3, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
                      cellData(cell: 4, image: #imageLiteral(resourceName: "selectIcon"), text: ""),
-                     cellData(cell: 5, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: "")]
+                     cellData(cell: 5, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
+                     cellData(cell: 6, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: ""),
+                     cellData(cell: 7, image: #imageLiteral(resourceName: "visualizerSettingPic"), text: "")]
 
 
 
@@ -84,6 +86,18 @@ class SettingsTableViewController: UITableViewController {
             return cell
             
         }
+        else if arrOfData[indexPath.row].cell == 6 {
+            
+            let cell = Bundle.main.loadNibNamed("SixthTableViewCell", owner: self, options: nil)?.first as! SixthTableViewCell
+            return cell
+            
+        }
+        else if arrOfData[indexPath.row].cell == 7 {
+            
+            let cell = Bundle.main.loadNibNamed("SeventhTableViewCell", owner: self, options: nil)?.first as! SeventhTableViewCell
+            return cell
+            
+        }
         else{
             // default
           let cell =  Bundle.main.loadNibNamed("FirstTableViewCell", owner: self, options: nil)?.first as! FirstTableViewCell
@@ -109,6 +123,12 @@ class SettingsTableViewController: UITableViewController {
     }
     else if arrOfData[indexPath.row].cell == 5 {
         return 40
+    }
+    else if arrOfData[indexPath.row].cell == 6 {
+        return 50
+    }
+    else if arrOfData[indexPath.row].cell == 7 {
+        return 50
     }
     else{
         // default
