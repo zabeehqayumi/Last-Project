@@ -29,10 +29,6 @@ class PhilipsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 3
-//    }
-
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,11 +49,7 @@ class PhilipsTableViewController: UITableViewController {
         return headerTitle[section]
     }
     
-    //Footer title
-    
-//    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-//        return FooterTitle[section]
-//    }
+
     
     // Header design
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
@@ -70,18 +62,7 @@ class PhilipsTableViewController: UITableViewController {
         header.textLabel?.font = UIFont(name: "Futura", size: 22)!
         
     }
-    // Footer design
-//    override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
-//
-//        // Custom design
-//
-//        let header = view as! UITableViewHeaderFooterView
-//        header.textLabel?.textColor = UIColor.gray
-//        header.backgroundView?.backgroundColor = UIColor.black
-//        header.textLabel?.font = UIFont(name: "Futura", size: 15)!
-//
-//
-//    }
+
     
     // Done button
     @IBAction func doneButtonPressed(_ sender: Any) {

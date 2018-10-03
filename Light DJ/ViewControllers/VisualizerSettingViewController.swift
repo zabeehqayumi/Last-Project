@@ -19,11 +19,7 @@ class VisualizerSettingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    
-    
+
     
     @IBAction func garbageButtonPressed(_ sender: Any) {
         warning()

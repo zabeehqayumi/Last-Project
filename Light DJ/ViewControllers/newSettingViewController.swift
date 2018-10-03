@@ -13,7 +13,6 @@ class newSettingViewController: UIViewController {
     
     @IBOutlet var burgerButtonCollection: [UIButton]!
     
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
